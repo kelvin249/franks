@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Rotation, Stars and Polygons</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- <link rel="stylesheet" href="css/.css?v=1.0"> -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      overflow: hidden;
+    }
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+
+</head>
+<body>
+  <!-- ORIGIN: https://www.youtube.com/watch?v=aO1VcJ5WpKI -->
+
+  <canvas id="canvas1"></canvas>
+
+  
+  <script>
+    const canvas = document.getElementById("canvas1")
+    const ctx = canvas.getContext('2d')
+    canvas.width = window.innerWidth
+    canvas.height = window.innerHeight
+    ctx.strokeStyle = 'black'
+    ctx.lineWidth = 2
+    ctx.shadowOffsetX = 10
+    ctx.shadowOffsetY = 10
+    ctx.shadowBlur = 10
+    ctx.shadowColor = 'black'
+    let hue = 0
+    let drawing = false
+    // ctx.globalCompositionOperation = 'lighter'
+    // destination-over, hue, lighter, difference
+
+    function drawShape(x, y, radius, inset, n) {
+      ctx.fillStyle = 'hsl(' + hue + ', 100%, 50%)'
+      ctx.beginPath()
+      ctx.save()
+
+      ctx.translate(x, y)
+       ctx.moveTo(0, 0 - radius)
+
+      for (let i = 0; i < n; i++) {
+      ctx.rotate(Math.PI / n)
+      ctx.lineTo(0, 0 - (radius * inset))
+      ctx.rotate(Math.PI / n )
+      ctx.lineTo(0, 0 - radius)
+      }
+      ctx.restore()
+      ctx.closePath()
+      ctx.stroke()
+      ctx.fill()
+      
+    }
+    const radius = 70
+    const inset = 0.4
+    const n = 10
+    drawShape(120, 120, radius * 1.45, 1, 1.5)
+    // drawShape(size, ratio of innner radius, points of star)
+
+    let angle = 0
+    window.addEventListener('mousemove', function(e) {
+      if (drawing) {
+        ctx.save()
+        ctx.translate(e.x, e.y)
+        ctx.rotate(angle)
+        hue+=3
+        angle += 0.1
+        drawShape(0, 0, radius, inset, n)
+        ctx.restore()
+      }
+    })
+    window.addEventListener('mousedown', function() {
+      drawing = true
+    })
+    window.addEventListener('mouseup', function() {
+      drawing = false
+    })
+  </script>
+
+</body>
+
+</html>

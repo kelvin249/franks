@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body { background-color: black; }
+
+  #canvas {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    /* top: 50%; */
+    /* left: 50%; */
+     /* background: blue; */ */
+    /* transform: translate(-50%, -50%); */
+  }
+
+  .generatr-tree-button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+    z-index: 10;
+    transform: translate(-50%,0);
+    padding: 20px 30px;
+    border-radius: 50%;
+    background: brown;
+    color: black;
+    font-size: 20px;
+    overflow: hidden;
+
+  }

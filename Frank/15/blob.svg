@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="blob.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:snap-global="false"
+     inkscape:zoom="0.69322917"
+     inkscape:cx="982.35913"
+     inkscape:cy="659.23366"
+     inkscape:window-width="1518"
+     inkscape:window-height="990"
+     inkscape:window-x="173"
+     inkscape:window-y="19"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg5" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1296">
+      <stop
+         style="stop-color:#ffdd55;stop-opacity:0.75773594"
+         offset="0"
+         id="stop1292" />
+      <stop
+         style="stop-color:#5587ff;stop-opacity:0.694"
+         offset="1"
+         id="stop1294" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1296"
+       id="linearGradient1298"
+       x1="1029.0861"
+       y1="42.038177"
+       x2="1018.0603"
+       y2="1254.708"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     id="layer1"
+     style="display:none"
+     sodipodi:insensitive="true" />
+  <ellipse
+     style="display:inline;mix-blend-mode:color-dodge;fill:url(#linearGradient1298);fill-opacity:1;fill-rule:evenodd"
+     id="path846"
+     cx="988.23969"
+     cy="636.25879"
+     rx="417.24893"
+     ry="262.64569" />
+</svg>
